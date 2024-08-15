@@ -9,5 +9,5 @@ Password Generator is a tool written in Python. This tool creates passwords for 
 
 # فارسی
 پسورد جنریتور یک ابزار نوشته شده به زبان پایتون است. این ابزار برای شما پسورد میسازد!
-### کمک 
+### کمک
 * فایل [main.py](https://github.com/robonamari/Password-Genarator/blob/main/main.py) را ران کنید.

@@ -18,7 +18,7 @@ Password Generator is a tool written in Python. This tool creates passwords for 
 
 ## Self-host Configuration
 <details>
-<summary>3 Steps to Host Your Own Dirlotix-py</summary>
+<summary>3 Steps to Host Your Own Password-Genarator</summary>
 
 ### 1. Clone the Repository
 ```bash

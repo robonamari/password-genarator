@@ -1,13 +1,17 @@
-![Static Badge](https://img.shields.io/badge/python-%E2%88%9E-blue)
-___
+<div align="center">
 
-# English
+[**🇮🇷 فارسی**](README_fa.md)
+</div>
+
+<p align="center">
+    <img src="https://img.shields.io/github/languages/code-size/robonamari/Password-Genarator?style=flat" alt="Code Size">
+    <img src="https://tokei.rs/b1/github/robonamari/Password-Genarator?style=flat" alt="Total lines">
+    <img src="https://img.shields.io/badge/python-%5E3.7-blue" alt="Python Versions">
+    <img src="https://img.shields.io/github/license/robonamari/Password-Genarator" alt="GitHub license">
+</p>
+
+---
+
 Password Generator is a tool written in Python. This tool creates passwords for you!
-### Help
-- Run the file [main.py](https://github.com/robonamari/Password-Genarator/blob/main/main.py).
-
-
-# فارسی
-پسورد جنریتور یک ابزار نوشته شده به زبان پایتون است. این ابزار برای شما پسورد میسازد!
-### کمک
-* فایل [main.py](https://github.com/robonamari/Password-Genarator/blob/main/main.py) را ران کنید.
+## Help
+- Run the file [main.py](main.py).

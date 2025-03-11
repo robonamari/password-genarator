@@ -13,8 +13,6 @@
 ---
 
 Password Generator is a tool written in Python. This tool creates passwords for you!
-## Help
-- Run the file [main.py](main.py).
 
 ## Self-host Configuration
 <details>

@@ -24,8 +24,6 @@ git clone https://github.com/robonamari/Password-Genarator
 ```
 
 ### 2. Install Python
-Install Python 3.7 or above. No additional dependencies are required.
-### 2. Install Python
 Install Python. No additional dependencies are required.
 
 ### 3. Run the Script

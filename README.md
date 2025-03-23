@@ -23,13 +23,10 @@ Password Generator is a tool written in Python. This tool creates passwords for 
 git clone https://github.com/robonamari/Password-Genarator
 ```
 
-<<<<<<< HEAD
 ### 2. Install Python
 Install Python 3.7 or above. No additional dependencies are required.
-=======
-### 2. Install Python  
+### 2. Install Python
 Install Python. No additional dependencies are required.
->>>>>>> fdd1c02856a44761dceb68d5e7e1f83df2c257b7
 
 ### 3. Run the Script
 ```bash

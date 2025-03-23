@@ -29,7 +29,7 @@ git clone https://github.com/robonamari/Password-Genarator
 
 ### **۳. اجرای اسکریپت**
 ```bash
-python index.py
+python main.py
 ```
 
 ### تمام!  

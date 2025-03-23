@@ -1,6 +1,6 @@
 <div align="center">
 
-[**🇮🇷 فارسی**](README_fa.md)
+[**🇮🇷 فارسی**](.github/README/fa.md)
 </div>
 
 <p align="center">
@@ -23,7 +23,7 @@ Password Generator is a tool written in Python. This tool creates passwords for 
 git clone https://github.com/robonamari/Password-Genarator
 ```
 
-### 2. Install Python  
+### 2. Install Python
 Install Python 3.7 or above. No additional dependencies are required.
 
 ### 3. Run the Script

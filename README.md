@@ -28,7 +28,7 @@ Install Python 3.9 or above. No additional dependencies are required.
 
 ### 3. Run the Script
 ```bash
-python index.py
+python main.py
 ```
 
 ### Done!

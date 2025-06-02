@@ -1,0 +1,58 @@
+name: Auto Release
+
+on:
+  push:
+    paths:
+      - "core/client.py"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Extract version from client.py
+        id: extract
+        run: |
+          VERSION=$(grep -Po '__version__\s*=\s*"\K[0-9.]+' core/client.py)
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+      - name: Check if tag exists
+        id: tag
+        run: |
+          TAG="v${{ steps.extract.outputs.version }}"
+          if git rev-parse "$TAG" >/dev/null 2>&1; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+      - name: Stop if tag exists
+        if: steps.tag.outputs.exists == 'true'
+        run: echo "🔁 Tag already exists. Skipping release."
+      - name: Create and push tag
+        if: steps.tag.outputs.exists != 'true'
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git tag "v$VERSION"
+          git push origin "v$VERSION"
+      - name: Build release assets
+        if: steps.tag.outputs.exists != 'true'
+        run: |
+          FILENAME="Rose-v$VERSION"
+          zip -r "$FILENAME.zip" . -x ".git/*" ".github/*" "README.md" ".gitignore" "*.zip" "*.tar.gz"
+          tar --exclude='.git' --exclude='.github' --exclude='README.md' --exclude='.gitignore' --exclude='*.zip' --exclude='*.tar.gz' -czf "$FILENAME.tar.gz" .
+      - name: Upload GitHub release
+        if: steps.tag.outputs.exists != 'true'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: "v${{ env.VERSION }}"
+          name: "v${{ env.VERSION }}"
+          files: |
+            Rose-v${{ env.VERSION }}.zip
+            Rose-v${{ env.VERSION }}.tar.gz

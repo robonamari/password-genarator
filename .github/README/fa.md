@@ -2,17 +2,14 @@
 
 [**🇺🇸 English**](../../README.md)
 
-</div>
-
-<p align="center">
-  <img src="https://img.shields.io/github/languages/code-size/robonamari/Password-Genarator?style=flat" alt="Code Size">
-  <img src="https://tokei.rs/b1/github/robonamari/Password-Genarator?style=flat" alt="Total lines">
-  <img src="https://img.shields.io/badge/python-%5E3.9-blue" alt="Python Versions">
-  <img src="https://img.shields.io/github/license/robonamari/Password-Genarator" alt="GitHub license">
-</p>
+![حجم کد](https://img.shields.io/github/languages/code-size/robonamari/Password-Genarator?style=flat)
+![تعداد خطوط](https://tokei.rs/b1/github/robonamari/Password-Genarator?style=flat)
+![نسخه HTML](https://img.shields.io/badge/python-%5E3.9-blue)
+![مجوز گیت هاب](https://img.shields.io/github/license/robonamari/Password-Genarator)
 
 ---
 
+</div>
 <p dir="rtl">
 
 تولیدکننده رمز عبور یک ابزار است که با زبان پایتون نوشته شده است. این ابزار برای شما رمزهای عبور ایجاد می‌کند!

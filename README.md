@@ -2,16 +2,14 @@
 
 [**Other Languages**](.github/README/)
 
-</div>
-
-<p align="center">
-  <img src="https://img.shields.io/github/languages/code-size/robonamari/Password-Genarator?style=flat" alt="Code Size">
-  <img src="https://tokei.rs/b1/github/robonamari/Password-Genarator?style=flat" alt="Total lines">
-  <img src="https://img.shields.io/badge/python-%5E3.9-blue" alt="Python Versions">
-  <img src="https://img.shields.io/github/license/robonamari/Password-Genarator" alt="GitHub license">
-</p>
+![Code Size](https://img.shields.io/github/languages/code-size/robonamari/Password-Genarator?style=flat)
+![Total lines](https://tokei.rs/b1/github/robonamari/Password-Genarator?style=flat)
+![Python Versions](https://img.shields.io/badge/python-%5E3.9-blue)
+![GitHub license](https://img.shields.io/github/license/robonamari/Password-Genarator)
 
 ---
+
+</div>
 
 Password Generator is a tool written in Python. This tool creates passwords for you!
 
